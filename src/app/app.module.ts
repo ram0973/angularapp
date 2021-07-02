@@ -12,6 +12,7 @@ import { BoardModeratorComponent } from './board-moderator/board-moderator.compo
 import { BoardUserComponent } from './board-user/board-user.component';
 import { HttpClientModule } from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
+import { authInterceptorProviders } from "./_helpers/auth.interceptor";
 
 @NgModule({
   declarations: [
