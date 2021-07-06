@@ -13,6 +13,9 @@ import { BoardUserComponent } from './board-user/board-user.component';
 import { HttpClientModule } from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
 import { authInterceptorProviders } from "./_helpers/auth.interceptor";
+import { ArticlesListComponent } from './components/articles-list/articles-list.component';
+import { ArticleDetailsComponent } from './components/article-details/article-details.component';
+import { AddArticleComponent } from './components/add-article/add-article.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { authInterceptorProviders } from "./_helpers/auth.interceptor";
     ProfileComponent,
     BoardAdminComponent,
     BoardModeratorComponent,
-    BoardUserComponent
+    BoardUserComponent,
+    ArticlesListComponent,
+    ArticleDetailsComponent,
+    AddArticleComponent
   ],
   imports: [
     AppRoutingModule,
