@@ -1,1 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/primeicons/primeicons.css";
+@import "../node_modules/primeng/resources/themes/saga-blue/theme.css";
+@import "../node_modules/primeng/resources/primeng.min.css";
+
+/* LAYOUT */
+
+html {
+}
+
+body {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+header, main, aside, footer {
+  padding: 1rem;
+}
+
+main {
+  flex: 2 1 70%;
+}
+
+aside {
+  flex: 2 1 30%;
+  background: #eee;
+}
+
+footer {
+  background: darkgrey;
+}
+
+/* ADAPTIVE */
+@media screen and (min-width: 768px) {
+  .main-wrapper {
+    flex-flow: row wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-wrapper {
+    min-width: 1200px;
+  }
+  fieldset {
+    width: 75% !important;
+  }
+}
